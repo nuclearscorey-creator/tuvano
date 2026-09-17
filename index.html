@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tuvano — IPTV player for Windows</title>
+<meta name="description" content="Tuvano is a fast, private IPTV player for Windows 10 and 11. Add your own M3U or Xtream playlist and watch Live TV, Movies and Series." />
+<style>
+  :root {
+    --navy: #0d1420; --panel: #141d2e; --line: #223049;
+    --text: #e8eef8; --dim: #9fb0c8; --green: #2fb68c; --blue: #3b82f6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--navy); color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; line-height: 1.6;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 72px 0 56px; text-align: center; background: radial-gradient(900px 420px at 50% -10%, #17273f 0%, var(--navy) 70%); }
+  .mark { width: 96px; height: 96px; border-radius: 22px; background: #111827; display: inline-flex; align-items: center; justify-content: center; }
+  .mark svg { width: 46px; height: 46px; }
+  h1 { font-size: 2.6rem; margin: 20px 0 6px; letter-spacing: .01em; }
+  .tagline { color: var(--dim); font-size: 1.15rem; margin: 0 0 28px; }
+  .cta { display: inline-block; background: var(--blue); color: #fff; text-decoration: none; font-weight: 600; padding: 13px 26px; border-radius: 10px; }
+  .cta.secondary { background: transparent; border: 1px solid var(--line); color: var(--text); margin-left: 10px; }
+  h2 { font-size: 1.5rem; margin: 56px 0 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--dim); font-size: .96rem; }
+  figure { margin: 0 0 22px; }
+  figure img { width: 100%; border-radius: 14px; border: 1px solid var(--line); display: block; }
+  figcaption { color: var(--dim); font-size: .9rem; margin-top: 8px; }
+  .notice { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--green); border-radius: 12px; padding: 18px 22px; color: var(--dim); }
+  footer { margin: 64px 0 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--dim); font-size: .92rem; }
+  a { color: #7ab6ff; }
+  @media (max-width: 640px) { h1 { font-size: 2rem; } header { padding: 48px 0 36px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="mark">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <polygon points="22,15 22,49 50,32" fill="#2fb68c" />
+      </svg>
+    </div>
+    <h1>Tuvano</h1>
+    <p class="tagline">A fast, private IPTV player for Windows 10 and 11.</p>
+    <!-- After the app is published, point this at the Microsoft Store listing. -->
+    <a class="cta" href="https://apps.microsoft.com/search?query=Tuvano">Get it from the Microsoft Store</a>
+    <a class="cta secondary" href="privacy-policy.html">Privacy policy</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <p>Add the playlist you are authorized to use — an M3U / M3U8 link or file, or an Xtream Codes login — and Tuvano
+  organizes it into Live TV, Movies and Series, with posters, favorites and watch history. Everything you enter stays
+  on your PC.</p>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Live TV</h3><p>Channels grouped by category, with search, quick switching, wide and full-screen viewing.</p></div>
+    <div class="card"><h3>Movies and Series</h3><p>Poster grid with categories and sorting, seasons and episodes, and resume from where you stopped.</p></div>
+    <div class="card"><h3>Catch Up</h3><p>Replay past programmes on channels where your provider offers it.</p></div>
+    <div class="card"><h3>Built for real connections</h3><p>Picks the quality your connection can carry and retries automatically when a stream drops.</p></div>
+    <div class="card"><h3>Plays what IPTV sends</h3><p>HEVC (H.265), MKV, AC3 and DTS, through the libVLC media engine.</p></div>
+    <div class="card"><h3>Private by design</h3><p>No account, no ads, no analytics. Playlists and logins stay on your PC; logins are encrypted by Windows.</p></div>
+  </div>
+
+  <h2>A look at the app</h2>
+  <figure>
+    <img src="screens/live-tv.png" alt="Tuvano playing a channel next to the channel list" />
+    <figcaption>Live TV: categories on the left, channels in the middle, the player on the right.</figcaption>
+  </figure>
+  <figure>
+    <img src="screens/movies.png" alt="Tuvano showing a grid of film posters" />
+    <figcaption>Movies, with categories and sorting.</figcaption>
+  </figure>
+  <figure>
+    <img src="screens/player.png" alt="Tuvano playing a film full width" />
+    <figcaption>The player, with seek bar, volume and full screen.</figcaption>
+  </figure>
+  <p style="color:#9fb0c8;font-size:.9rem">The titles, posters, channel logos and video in these pictures are demo
+  content made for the screenshots. Tuvano ships with no channels or films of its own.</p>
+
+  <h2>Tuvano is a player, not a TV service</h2>
+  <div class="notice">
+    Tuvano does not include, sell, host or recommend any channels, playlists, films or programme guides. You add your
+    own sources and are responsible for being authorized to use them. Tuvano does not bypass DRM, geo-blocking,
+    paywalls or any other protection.
+  </div>
+
+  <h2>Support</h2>
+  <p>Questions, problems or licence enquiries: <a href="mailto:nuclearscorey@gmail.com">nuclearscorey@gmail.com</a></p>
+</main>
+
+<footer class="wrap">
+  © 2026 Scorey (Chongwan Wanlo Conrad). Tuvano is built with libVLC (LGPL-2.1-or-later), the Windows App SDK and .NET;
+  their licences are shown on the app's About &amp; licenses page.
+</footer>
+</body>
+</html>
