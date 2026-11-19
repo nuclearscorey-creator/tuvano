@@ -7,8 +7,8 @@
 <meta name="description" content="Tuvano is a fast, private IPTV player for Windows 10 and 11. Add your own M3U or Xtream playlist and watch Live TV, Movies and Series." />
 <style>
   :root {
-    --navy: #0d1420; --panel: #141d2e; --line: #223049;
-    --text: #e8eef8; --dim: #9fb0c8; --green: #2fb68c; --blue: #3b82f6;
+    --navy: #06111c; --panel: #101c29; --line: #20364a;
+    --text: #f3f8fb; --dim: #a9b7c8; --green: #76d1b6;
   }
   * { box-sizing: border-box; }
   body {
@@ -17,11 +17,10 @@
   }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
   header { padding: 72px 0 56px; text-align: center; background: radial-gradient(900px 420px at 50% -10%, #17273f 0%, var(--navy) 70%); }
-  .mark { width: 96px; height: 96px; border-radius: 22px; background: #111827; display: inline-flex; align-items: center; justify-content: center; }
-  .mark svg { width: 46px; height: 46px; }
+  .mark { width: 96px; height: 96px; display: inline-block; }
   h1 { font-size: 2.6rem; margin: 20px 0 6px; letter-spacing: .01em; }
   .tagline { color: var(--dim); font-size: 1.15rem; margin: 0 0 28px; }
-  .cta { display: inline-block; background: var(--blue); color: #fff; text-decoration: none; font-weight: 600; padding: 13px 26px; border-radius: 10px; }
+  .cta { display: inline-block; background: var(--green); color: #061b1a; text-decoration: none; font-weight: 600; padding: 13px 26px; border-radius: 10px; }
   .cta.secondary { background: transparent; border: 1px solid var(--line); color: var(--text); margin-left: 10px; }
   h2 { font-size: 1.5rem; margin: 56px 0 18px; }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 16px; }
@@ -40,11 +39,7 @@
 <body>
 <header>
   <div class="wrap">
-    <div class="mark">
-      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <polygon points="22,15 22,49 50,32" fill="#2fb68c" />
-      </svg>
-    </div>
+    <img class="mark" src="logo.png" alt="" width="96" height="96" />
     <h1>Tuvano</h1>
     <p class="tagline">A fast, private IPTV player for Windows 10 and 11.</p>
     <!-- The published listing (Store ID 9PL7169R2GL4). -->
@@ -60,10 +55,10 @@
 
   <h2>What it does</h2>
   <div class="grid">
-    <div class="card"><h3>Live TV</h3><p>Browse channels and programme times in a guide with readable channel names. Select a channel to play it, then switch to Wide or Full Screen.</p></div>
+    <div class="card"><h3>Live TV</h3><p>See the first channels while the library loads. Search by channel name, browse by country or group, and play directly from the programme guide.</p></div>
     <div class="card"><h3>Movies and Series</h3><p>Poster grid with categories and sorting, seasons and episodes, and resume from where you stopped.</p></div>
     <div class="card"><h3>Catch Up</h3><p>Browse past programmes in a timeline and replay them on supported channels.</p></div>
-    <div class="card"><h3>Built for real connections</h3><p>Picks the quality your connection can carry and retries automatically when a stream drops.</p></div>
+    <div class="card"><h3>Playback controls</h3><p>Use Wide and Full screen to expand the picture. Loading, retry and reload messages follow your app language.</p></div>
     <div class="card"><h3>Plays what IPTV sends</h3><p>HEVC (H.265), MKV, AC3 and DTS, through the libVLC media engine.</p></div>
     <div class="card"><h3>Private by design</h3><p>No account, no ads, no analytics. Playlists and logins stay on your PC; logins are encrypted by Windows.</p></div>
   </div>
@@ -74,8 +69,8 @@
     <figcaption>Discover titles and return to recent viewing from Home.</figcaption>
   </figure>
   <figure>
-    <img src="live-tv.png" alt="Live TV programme guide with channel categories, time slots and video preview" />
-    <figcaption>Browse the Live TV guide while a channel plays in the preview.</figcaption>
+    <img src="live-tv.png" alt="Live TV with channel search, Countries and Groups tabs, programme times and a video preview" />
+    <figcaption>Search for channels by name or browse countries and groups alongside the programme guide.</figcaption>
   </figure>
   <figure>
     <img src="catch-up.png" alt="Catch Up timeline with past programmes arranged by channel and time" loading="lazy" />
